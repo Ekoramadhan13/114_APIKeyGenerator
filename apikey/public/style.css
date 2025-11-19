@@ -1,0 +1,103 @@
+/* ===== Global Style ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px 40px;
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* ===== Title ===== */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ===== Input & Button ===== */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+button {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 8px;
+  width: 100%;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  border: 1px solid #ccc;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+/* ===== Buttons ===== */
+button {
+  cursor: pointer;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  transition: 0.25s;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #357ab8;
+}
+
+/* ===== Table ===== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 25px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th {
+  background: #4a90e2;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Hover row */
+tr:hover {
+  background: #f1f1f1;
+}
+
+/* ===== Link Style ===== */
+a {
+  color: #4a90e2;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Container ===== */
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  max-width: 450px;
+  margin: auto;
+}
