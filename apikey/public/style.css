@@ -1,103 +1,149 @@
 /* ===== Global Style ===== */
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px 40px;
-  background: #f4f6f9;
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f0fa; /* soft purple background */
   color: #333;
+}
+
+/* ===== Page Wrapper ===== */
+.page-wrapper {
+  max-width: 1150px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 /* ===== Title ===== */
 h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #2c3e50;
-  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #4b2e83; /* dark elegant purple */
+  font-weight: 700;
   text-align: center;
-}
-
-/* ===== Input & Button ===== */
-input[type="text"],
-input[type="password"],
-input[type="email"],
-button {
-  padding: 10px;
-  font-size: 16px;
-  margin-top: 8px;
-  width: 100%;
-  border-radius: 6px;
-  box-sizing: border-box;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-  border: 1px solid #ccc;
-  transition: 0.2s;
-}
-
-input:focus {
-  border-color: #4a90e2;
-  box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+  letter-spacing: 0.5px;
 }
 
 /* ===== Buttons ===== */
 button {
-  cursor: pointer;
-  background: #4a90e2;
-  color: white;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 8px;
   border: none;
-  transition: 0.25s;
-  font-weight: bold;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(135deg, #8e44ad, #6c2baa); /* violet gradient */
+  color: white;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
 }
 
 button:hover {
-  background: #357ab8;
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #6c2baa, #5a2390);
 }
 
-/* ===== Table ===== */
-table {
-  border-collapse: collapse;
+/* ===== Input Fields ===== */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  padding: 12px 14px;
+  font-size: 15px;
+  margin-top: 8px;
   width: 100%;
-  margin-top: 25px;
+  border-radius: 8px;
+  border: 1px solid #d2bee9;
+  background: #fff;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #8e44ad; 
+  box-shadow: 0 0 7px rgba(142, 68, 173, 0.4);
+}
+
+/* ===== Form Container ===== */
+.form-container {
   background: white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 25px 30px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  max-width: 480px;
+  margin: 40px auto;
+  animation: fadeIn 0.4s ease-in-out;
 }
 
-th {
-  background: #4a90e2;
-  color: white;
-  padding: 12px;
-  font-size: 16px;
+/* ===== Fade Animation ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-td {
-  padding: 10px;
-  border: 1px solid #ddd;
-}
-
-/* Hover row */
-tr:hover {
-  background: #f1f1f1;
-}
-
-/* ===== Link Style ===== */
+/* ===== Links ===== */
 a {
-  color: #4a90e2;
+  color: #7b3fb3; /* soft violet */
+  font-weight: 600;
   text-decoration: none;
-  cursor: pointer;
-  font-weight: bold;
+  transition: 0.2s;
 }
 
 a:hover {
+  color: #58298a;
   text-decoration: underline;
 }
 
-/* ===== Container ===== */
-.form-container {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  max-width: 450px;
-  margin: auto;
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+thead tr {
+  background: none;
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  font-size: 15px;
+  color: #4b2e83; 
+  font-weight: 700;
+  border-bottom: 2px solid #ccb9e8;
+}
+
+tr {
+  background: #ffffff;
+  transition: 0.25s ease-in-out;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+}
+
+td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e7daf7;
+}
+
+tr:hover {
+  transform: scale(1.01);
+  background: #f3eaff;
+}
+
+/* ===== Delete Button ===== */
+.delete-btn {
+  background: #ff6b6b;
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.delete-btn:hover {
+  background: #e35454;
+  transform: scale(1.05);
 }
